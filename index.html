@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<title>ZeroDocs</title>
+		<link rel="shortcut icon" href="img/favicon.png"  type="image/x-icon" />
+		
+	        <!-- jQuery 3.x -->
+	        <script src="js/jquery.min.js"></script>
+		
+	        <!-- Include Quill stylesheet -->
+		<link href="css/quill.zerodocs.css" rel="stylesheet" />
+		
+		<!-- Support your local filesystem -->
+		<link href="css/main.css" rel="stylesheet" />
+		
+		<!-- Initialize Quill editor -->
+		<script src="js/quill.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+<body>
+
+<header class="flex">
+    <a id="navicon" href="#">&#9776;</a>
+	<div class="centered-wrapper">
+		<input id="title" type="text" value="New ZeroDoc" />
+        <div id="toolbar">
+            <span class="ql-formats">
+                <select class="ql-font" title="Font"></select>
+            </span>
+            <span class="ql-formats">
+                <select class="ql-size" title="Font Size"></select>
+            </span>
+            <span class="ql-formats">
+                <button class="ql-bold" title="Bold"></button>
+                <button class="ql-italic" title="Italic"></button>
+                <button class="ql-underline" title="Underline"></button>
+                <button class="ql-color" title="Text Color"></button>
+                <button class="ql-background" title="Text Background Color"></button>
+            </span>
+            <span class="ql-formats">
+                <button class="ql-link" title="Insert Link"></button>
+                <button class="ql-blockquote" title="Blockquote"></button>
+                <button class="ql-code-block" title="Code Block"></button>
+            </span>
+            <span class="ql-formats">
+                <button class="ql-script" value="sub" title="Superscript"></button>
+                <button class="ql-script" value="super" title="Subscript"></button>
+            </span>
+            <span class="ql-formats">
+                <button class="ql-align" value="" title="Align Left"></button>
+                <button class="ql-align" value="center" title="Center"></button>
+                <button class="ql-align" value="right" title="Align Right"></button>
+                <button class="ql-align" value="justify" title="Justify"></button>
+            </span>
+            <span class="ql-formats">
+                <button class="ql-list" value="ordered" title="Numbered List"></button>
+                <button class="ql-list" value="bullet" title="Bullet List"></button>
+                <button class="ql-indent" value="-1" title="Decrease Indent"></button>
+                <button class="ql-indent" value="+1" title="Increase Indent"></button>
+            </span>
+            <span class="ql-formats">
+                <button class="ql-clean" title="Remove Formatting"></button>
+            </span>
+        </div>
+        <span id="save-status"></span>
+    </div>
+</header>
+
+<nav id="nav-menu">
+    <ul>
+        <h1>Group 1</h1>
+        <li>
+            Item 1
+        </li>
+        <li>
+            Item 2
+        </li>
+        <h1>Group 2</h1>
+        <li>
+            Item 1
+        </li>
+        <li>
+            Item 2
+        </li>
+    </ul>
+</nav>
+
+<content>
+    <div id="editor"></div>
+</content>
+
+<!--
+    [{ 'font': [] }],
+    [{ 'size': ['small', false, 'large', 'huge'] }],
+    ['bold', 'italic', 'underline', 'color', 'background'],
+    ['link', 'blockquote', 'code-block'],
+    [{ 'script': 'sub'}, { 'script': 'super' }],
+    [{ 'align': '' }, { 'align': 'center' }, { 'align': 'right' }, { 'align': 'justify' }],
+    [{ 'list': 'ordered'}, { 'list': 'bullet' }, { 'indent': '-1'}, { 'indent': '+1' }],
+    ['clean']
+-->
+
+
+<footer id="cryforhelp" style="position: fixed; bottom: 5px; left: 5px; border: 1px solid #CCC; padding: 10px; background: #fff;">
+    <p>Under construction.</p>
+    <p>This zite aims to be a feature full document editor for 0net.</p>
+	<p>Feel free to contribute! <a href="https://github.com/shitchell/ZeroDocs">Github</a></p>
+</footer>
+
+</body>
+</html>

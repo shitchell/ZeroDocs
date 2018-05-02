@@ -1,0 +1,17 @@
+# Ignore all files and directories
+/*
+/*/
+
+# Except for these files...
+!/.gitignore
+!/.gitmodules
+!/index.html
+!/README.md
+
+# ...and these folders
+!/css/
+!/img/
+!/js/
+
+# But let's do ignore any .git repository infos
+.git/
